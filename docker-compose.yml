@@ -1,0 +1,27 @@
+version: "3"
+services:
+  some-mysql:
+    image: mysql:8.0.29
+    restart: always
+    volumes:
+      - verilerim:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=currency_tracker
+      - MYSQL_ROOT_USER=root
+      - MYSQL_PASSWORD=root
+    networks:
+      - spring-boot-network
+  springboot-docker-container:
+    build: .
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - some-mysql
+    networks:
+      - spring-boot-network
+volumes:
+  verilerim:
+networks:
+  spring-boot-network:
