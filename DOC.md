@@ -1,11 +1,12 @@
-## To Start Currency Tracker Project:
-
-  - First of all make sure that mysql is started.
-   Make sure mysql_username: root 
-   and mysql_password = Boskef261 or change your db informations in application.properties file
-  - Then create database with following script:
-    CREATE DATABASE currency_tracker; 
-  - Now you can run this project from IDE or jar file. 
+## To Start Docker Version of Currency Tracker Project :
+  - First of all, you should run below command for building project.
+    ```mvn clean install
+   ```
+  - You should run below command, after that project will be up.
+   ```
+   docker-compose up
+   ```
+  - Now you can check endpoints. 
   - Import Postman Collection And Check Endpoints: You can find postman collection
 under root folder:
 CurrencyTracker.postman_collection.json

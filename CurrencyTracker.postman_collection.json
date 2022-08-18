@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "f8dd8ce3-ed88-4089-b4c1-7abb07b7b912",
+		"_postman_id": "b24523b6-b7c0-4dca-8395-7050e17c7678",
 		"name": "CurrencyTracker",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -15,12 +15,12 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
+									"key": "password",
 									"value": "user",
 									"type": "string"
 								},
 								{
-									"key": "password",
+									"key": "username",
 									"value": "user",
 									"type": "string"
 								}
@@ -29,12 +29,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/v1/currencyTracker/currency/list",
+							"raw": "http://localhost:8086/api/v1/currencyTracker/currency/list",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8086",
 							"path": [
 								"api",
 								"v1",
@@ -68,7 +68,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"BTC\",\n    \"symbol\":\"BTC\",\n    \"currentPrice\":\"20000\"\n}",
+							"raw": "{\n    \"name\": \"Dolar\",\n    \"symbol\":\"dolar\",\n    \"currentPrice\":\"20000\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -76,12 +76,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/currencyTracker/currency/create",
+							"raw": "http://localhost:8086/api/v1/currencyTracker/currency/create",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8086",
 							"path": [
 								"api",
 								"v1",
@@ -123,12 +123,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/currencyTracker/currency/delete/1",
+							"raw": "http://localhost:8086/api/v1/currencyTracker/currency/delete/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8086",
 							"path": [
 								"api",
 								"v1",
@@ -223,19 +223,19 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/currencyTracker/alert/create/1",
+							"raw": "http://localhost:8086/api/v1/currencyTracker/alert/create/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8086",
 							"path": [
 								"api",
 								"v1",
 								"currencyTracker",
 								"alert",
 								"create",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -247,12 +247,12 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/v1/currencyTracker/alert/close/1",
+							"raw": "http://localhost:8086/api/v1/currencyTracker/alert/close/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8086",
 							"path": [
 								"api",
 								"v1",
@@ -286,12 +286,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/v1/currencyTracker/alert/list",
+							"raw": "http://localhost:8086/api/v1/currencyTracker/alert/list",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8086",
 							"path": [
 								"api",
 								"v1",
@@ -309,12 +309,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/v1/currencyTracker/alert/delete/1",
+							"raw": "http://localhost:8086/api/v1/currencyTracker/alert/delete/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8086",
 							"path": [
 								"api",
 								"v1",
@@ -333,12 +333,12 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/v1/currencyTracker/alert/cancel/1",
+							"raw": "http://localhost:8086/api/v1/currencyTracker/alert/cancel/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8086",
 							"path": [
 								"api",
 								"v1",
